@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Predictions</title>
+</head>
+<body>
+<div class="">
+    <h1>Predict salary</h1>
+    <form action="{{url_for('predict')}}" method="post">
+        <input type="text" name="jobType" placeholder="Job Type" required="required">
+        <input type="text" name="degree" placeholder="degree" required="required">
+        <input type="text" name="major" placeholder="major" required="required">
+        <input type="text" name="industry" placeholder="industry" required="required">
+        <input type="text" name="yearsExperience" placeholder="years of Experience" required="required">
+        <input type="text" name="milesFromMetropolis" placeholder="miles From Metropolis" required="required">
+        <button type="submit" class="">Predict</button>
+    </form>
+    <br>
+    <br>
+    {{prediction_text}}
+</div>
+</body>
+</html>
